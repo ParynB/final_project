@@ -14,28 +14,37 @@
     <title >Paryn B</title>
 </head>
 <body>
-
   <header>
       <nav>
         <ul>
             <li><a href = "index.html">About Me</a></li>
             <li><a href = "work.html">Work</a></li>
             <li><a href = "littlebuilders.html">My Enterprise</a></li>
-            <li><a href = "resume.html" class = "active">Resume</a></li>
-            <!-- <li><a href = "contact.html">Contact Me</a></li> -->
+            <li><a href = "resume.html">Resume</a></li>
+            <!-- <li><a href = "contact.html" class = "active">Contact Me</a></li> -->
 
         </ul>
         <a tabindex="0" href="#content">Skip to Content</a>
       </nav>
-      <img src="images/page4_Me.jpg" alt = "me_last_pic">
-
+      <!-- <img src="images/page4_Me.jpg" alt = "me_last_pic"> -->
   </header>
-  <main class="bg">
-    <div class="box-bg">
-    <h1><i class="fas fa-file-contract"></i> My Resume</h1>
-    <p id="content">Please find my full resume as attached</p>
-    <a class="btn" href="file:///Users/bee/Document_Bee/SI539/wk6_HW_revised/docs/Resume_Paryn_Assavanop.pdf" role="button">Download Resume</a>
-  </div>
+  <main>
+    <form action="https://formspree.io/b.assavanop@gmail.com" method="POST">
+    	<fieldset>
+    		<legend>Personal Information:</legend>
+    		<label for="name">Name</label>
+    		<input type="text" id = "name" name="name" placeholder = "Paryn"><br><br>
+    		<label for="email">Email</label>
+    		<input type="email" value = "email@umich.edu"><br><br>
+    		<label for="confirm email">Confirm Email</label>
+    		<input type="text" placeholder="retype your email"><br><br>
+    		<label for="birth">Date of birth:</label>
+    		<input type="date" id = "birth" name="birthday"><br><br>
+    		<label for="color">Favorite Color</label>
+    		<input type="color" id="fav color" value="#ff0000"><br><br>
+    		<input type = "submit" value = "Click to save">
+    	</fieldset>
+    </form>
   </main>
   <footer>
       <p> © Paryn Assavanop </p>

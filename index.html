@@ -22,6 +22,12 @@
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/theme.css">
     <title >Paryn B</title>
+    <style>
+      label{
+			     display: inline-block;
+			     width: 33%;
+         }
+    </style>
 </head>
 <body>
   <header>
@@ -31,6 +37,7 @@
               <li><a href = "work.html">Work</a></li>
               <li><a href = "littlebuilders.html">My Enterprise</a></li>
               <li><a href = "resume.html">Resume</a></li>
+              <!-- <li><a href = "contact.html">Contact Me</a></li> -->
           </ul>
           <a tabindex="0" href="#content">Skip to Content</a>
       </nav>
@@ -49,7 +56,25 @@
     <p> I enjoy solving complex and meaningful challenges. So, I wanted to solve big problems that I experienced in Thailand's education system. As a result, I co-founded a social enterprise which aims to create meaningful education to underprivileged kids through innovative approaches.  
     Ultimately, I want to combine these experiences to empower a cross-functional team to create impact through technology and innovation.
     </p>
-    </main>
+
+    <h2>Contact Me</h2>
+    <p> Please feel free to get in touch with me. I am open to discussing new opportunities.</p>
+    <form action="https://formspree.io/b.assavanop@gmail.com" method="POST">
+    	<fieldset>
+    		<!-- <legend>Personal Information:</legend><br><br> -->
+    		<label for="name">Name</label>
+    		<input type="text" name="name" required placeholder = "Fill your name here"><br><br>
+    		<label for="email">Email</label>
+    		<input type="email" name="email" required placeholder = "Fill your email here"><br><br>
+        <label for="subject">Subject</label>
+    		<input type="text" name="subject" required><br><br>
+        <label for="msg">Message</label>
+    		<input type="text" name="message" placeholder = "write something.." style="height:200px"><br><br>
+    		<input type = "submit" value = "Submit">
+    	</fieldset>
+    </form>
+
+  </main>
     <footer>
         <p> © Paryn Assavanop </p>
     </footer>
