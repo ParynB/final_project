@@ -267,6 +267,10 @@ input[type=text], [type=email]{
   color: orange;
 }
 
+.hamicon{
+  display: none;
+}
+
 @media only screen and (max-width: 750px) and (orientation: landscape) {
   main{
     padding: 1rem 0.5rem 1rem 0.5rem;
@@ -287,6 +291,10 @@ input[type=text], [type=email]{
     flex: 1 100%;
   }
 
+}
+
+nav a.menu-toggle{
+  display: none;
 }
 
 @media only screen and (max-width: 700px) {
@@ -317,7 +325,9 @@ input[type=text], [type=email]{
     height: auto;
   }
 }
-
+  .hamicon{
+    display: block;
+  }
 footer {
     padding: 10px 20px;
     background: #666;
