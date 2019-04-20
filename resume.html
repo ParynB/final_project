@@ -17,6 +17,18 @@
 
   <header>
       <nav>
+        <a class="menu-toggle" href="#" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
+        <script>
+          function menuToggle() {
+            var nav = document.getElementsByTagName('nav')[0];
+            if(nav.className == 'show'){
+              nav.className = '';
+            } else {
+              nav.className ='show';
+            }
+
+          }
+        </script>
         <ul>
             <li><a href = "index.html">About Me</a></li>
             <li><a href = "work.html">Work</a></li>
@@ -31,10 +43,14 @@
 
   </header>
   <main class="bg">
-    <div class="box-bg">
+  <div class="box-bg">
     <h1><i class="fas fa-file-contract"></i> My Resume</h1>
     <p id="content">Please find my full resume as attached</p>
     <a class="btn" href="file:///Users/bee/Document_Bee/SI539/wk6_HW_revised/docs/Resume_Paryn_Assavanop.pdf" role="button">Download Resume</a>
+  </div>
+  <div class="callout">
+  <div class="callout-header">Please click Download Resume to learn more about me and my experience</div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
   </div>
   </main>
   <footer>

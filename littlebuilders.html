@@ -18,6 +18,18 @@
   <body>
     <header>
         <nav>
+          <a class="menu-toggle" href="#" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
+          <script>
+            function menuToggle() {
+              var nav = document.getElementsByTagName('nav')[0];
+              if(nav.className == 'show'){
+                nav.className = '';
+              } else {
+                nav.className ='show';
+              }
+
+            }
+          </script>
             <ul>
               <li><a href = "index.html">About Me</a></li>
               <li><a href = "work.html">Work</a></li>
@@ -34,7 +46,30 @@
 <main class="flex-container">
   <h2 id="content">Little Builders</h2>
   <div><img class="resize" src="images/page2_LB_logo.jpg" alt = "LB project"> </div>
-  <h3>Overview</h3>
+
+  <button class="accordion">Overview</button>
+    <div class="panel">
+      <img class="img-resize" src="images/page3_LB.png" alt = "LB2">
+      <p class="flex-item-2-col">Little Builders is a community of passionate people who care about meaningful education and inequality problems. We want to create an effective learning experience for students and create an environment for them to innovate and build solutions that solve community problems around them.
+      </p>
+    </div>
+  <button class="accordion">Challenge</button>
+    <div class="panel">
+      <p>I discovered Thai students spend 33% more time studying than students in developed countries. However, standardized PISA tests show we actually have lower performance. I myself have been through this education system for most of my life and realized that this needed to be changed.
+      </p>
+    </div>
+  <button class="accordion">Approach</button>
+    <div class="panel">
+      <p>Our approach is the integration of Design Thinking. Instead of telling students what to think, I teach them how to think, by providing hands-on experiences to create community-impact solutions because I believe the best way to learn is by doing.
+      We create our own method by adapting Design Thinking to suit Thai students learning context.
+      </p>
+      <div><img src="images/page3_Design_Think_Diagram.png" alt = "DT process"></div>
+    </div>
+  <button class="accordion">Award</button>
+    <div class="panel">
+      <img class="resize" src="images/page3_SE_Award_LB.png" alt = "SEaward">
+    </div>
+<!-- <h3>Overview</h3>
   <div class="flex-item-2-col"><img src="images/page3_LB.png" alt = "LB2"></div>
   <p class="flex-item-2-col">Little Builders is a community of passionate people who care about meaningful education and inequality problems. We want to create an effective learning experience for students and create an environment for them to innovate and build solutions that solve community problems around them.
   </p>
@@ -57,7 +92,7 @@
   </p>
   <div><img src="images/page3_Student-design-web-somsa.png" alt = "ex_phit"></div>
   <h3>Want to know more what we did?</h3>
-  <p class="growitem">Here are some captures of our projects: (capture in photo)</p>
+  <p class="growitem">Here are some captures of our projects: (capture in photo)</p> -->
 
   <!-- <div class="container">
     <img src="images/page3_cap1.png" alt = "ex_lb1">
@@ -81,5 +116,25 @@
     <p> © Paryn Assavanop </p>
   </footer>
 <script src="lightbox2-master/dist/js/lightbox-plus-jquery.js"></script>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
 </body>
 </html>

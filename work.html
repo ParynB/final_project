@@ -10,11 +10,24 @@
   <link rel="shortcut icon" href="images/logo.png">
   <link rel="stylesheet" type="text/css" href="css/html5reset.css">
   <link rel="stylesheet" type="text/css" href="css/theme.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <title >Paryn B</title>
 </head>
 <body>
   <header>
       <nav>
+        <a class="menu-toggle" href="#" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
+        <script>
+          function menuToggle() {
+            var nav = document.getElementsByTagName('nav')[0];
+            if(nav.className == 'show'){
+              nav.className = '';
+            } else {
+              nav.className ='show';
+            }
+
+          }
+        </script>
           <ul>
             <li><a href = "index.html">About Me</a></li>
             <li><a href = "work.html" class = "active">Work</a></li>

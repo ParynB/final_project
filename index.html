@@ -6,6 +6,7 @@
     <meta name="description" content="Paryn B">
     <meta name="keyword" content="Paryn, Paryn B, Assavanop">
 
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138519883-1"></script>
     <script>
@@ -15,12 +16,13 @@
 
       gtag('config', 'UA-138519883-1');
     </script>
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="shortcut icon" href="images/logo.png">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/theme.css">
+
     <title >Paryn B</title>
     <style>
       label{
@@ -32,14 +34,30 @@
 <body>
   <header>
       <nav>
+        <a class="menu-toggle" href="#" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
+        <script>
+          function menuToggle() {
+            var nav = document.getElementsByTagName('nav')[0];
+            if(nav.className == 'show'){
+              nav.className = '';
+            } else {
+              nav.className ='show';
+            }
+
+          }
+        </script>
           <ul>
               <li><a href = "index.html" class = "active">About Me</a></li>
               <li><a href = "work.html">Work</a></li>
               <li><a href = "littlebuilders.html">My Enterprise</a></li>
               <li><a href = "resume.html">Resume</a></li>
-              <!-- <li><a href = "contact.html">Contact Me</a></li> -->
           </ul>
-          <a tabindex="0" href="#content">Skip to Content</a>
+          <!-- <div class="topnav" id="myTopnav">
+            <a href = "index.html" class = "active">About Me</a>
+            <a href = "work.html">Work</a>
+            <a href = "littlebuilders.html">My Enterprise</a>
+            <a href = "resume.html">Resume</a>
+          <a tabindex="0" href="#content">Skip to Content</a> -->
       </nav>
       <img src="images/page1_Landing.jpg" alt = "landing picture">
 
@@ -78,5 +96,15 @@
     <footer>
         <p> © Paryn Assavanop </p>
     </footer>
+  <script>
+//   function myFunction() {
+//   var x = document.getElementById("myTopnav");
+//   if (x.className === "topnav") {
+//     x.className += " responsive";
+//   } else {
+//     x.className = "topnav";
+//   }
+// }
+//   </script>
   </body>
     </html>
