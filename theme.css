@@ -248,9 +248,9 @@ input[type=text], [type=email]{
 
 .callout-header {
   padding: 30px 85px;
-  background: grey;
+  background: darkgrey;
   font-size: 18px;
-  color: white;
+  color: black;
 }
 
 
